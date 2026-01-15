@@ -1,4 +1,3 @@
-// 1. ОПТИМИЗИРОВАННЫЕ ПАРТИКЛЫ
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let particles = [];
@@ -37,7 +36,6 @@ function animateParticles() {
     requestAnimationFrame(animateParticles);
 }
 
-// 2. СМЕНА ТЕМЫ С ЭФФЕКТОМ ВОЛНЫ
 const themeBtn = document.getElementById('theme-toggle');
 
 function toggleTheme(e) {
@@ -76,7 +74,6 @@ function updateIcon(isDark) {
     icon.textContent = isDark ? 'dark_mode' : 'light_mode';
 }
 
-// 3. СТАРТ
 window.addEventListener('load', () => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (prefersDark) {
@@ -89,4 +86,5 @@ window.addEventListener('load', () => {
 });
 
 themeBtn.addEventListener('click', toggleTheme);
+
 window.addEventListener('resize', initParticles);
