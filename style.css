@@ -64,7 +64,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 500; margin-bottom: 20p
     margin-bottom: 40px; /* Отступ снизу от кнопки */
 }
 
-/* ЭФФЕКТ СВЕЧЕНИЯ */
+/* свечение */
 .glow-effect {
     position: absolute;
     top: 50%; left: 50%;
@@ -77,7 +77,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 500; margin-bottom: 20p
     pointer-events: none;
 }
 
-/* АНИМАЦИЯ ЛЕВИТАЦИИ */
+/* левитация тел пуш*/
 @keyframes float {
     0% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-15px) rotate(1deg); }
@@ -112,7 +112,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 500; margin-bottom: 20p
 .video-text { width: 85%; height: 10px; background: #2a2a2a; margin-top: 12px; border-radius: 5px; }
 .video-subtext { width: 55%; height: 8px; background: #222; margin-top: 8px; border-radius: 4px; }
 
-/* Карточки-пуши */
+/* пуши */
 .floating-card {
     position: absolute; background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08);
@@ -122,7 +122,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 500; margin-bottom: 20p
 
 .status-card { 
     top: 40px; left: -120px; width: 200px; 
-    border-left: 4px solid var(--md-sys-color-primary); /* Заменено на наш цвет */
+    border-left: 4px solid var(--md-sys-color-primary);
 }
 .quality-card { bottom: 80px; right: -100px; width: 180px; }
 
@@ -149,4 +149,5 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 500; margin-bottom: 20p
     .status-card { left: -30px; top: -50px; }
     .quality-card { right: -30px; bottom: -20px; }
     .glow-effect { width: 300px; height: 300px; }
+
 }
