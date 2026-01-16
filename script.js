@@ -58,6 +58,7 @@ function toggleTheme(e) {
 
     transition.ready.then(() => {
         const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+        
         document.documentElement.animate(
             { clipPath: [`circle(0% at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
             {
