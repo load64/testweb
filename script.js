@@ -7,14 +7,17 @@ function initParticles() {
     canvas.height = 500;
     particles = [];
     const isMobile = window.innerWidth < 768;
-    const count = isMobile ? 15 : 45;
+    
+    // Увеличили количество частиц (было 15/45, стало 40/100)
+    const count = isMobile ? 40 : 100; 
     
     for (let i = 0; i < count; i++) {
         particles.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             size: Math.random() * 1.5 + 0.5,
-            speedY: Math.random() * 0.4 + 0.1,
+            // Немного ускорили (было 0.1-0.5, стало 0.2-0.8)
+            speedY: Math.random() * 0.6 + 0.2, 
             opacity: Math.random() * 0.25
         });
     }
